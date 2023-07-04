@@ -2631,6 +2631,11 @@
     "@strapi/utils" "4.6.0"
     lodash "4.17.21"
 
+"@strapi/plugin-gatsby-preview@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npmmirror.com/@strapi/plugin-gatsby-preview/-/plugin-gatsby-preview-0.1.0.tgz#929e13fc403e19d9561279de25eaa389b5887ad6"
+  integrity sha512-7pVbsYQFaWSwsYeTBKqHxFK4DdDOX97Ub/3m9ZlXzQpEWXxBBeRX3SZnxVC9+PmHckZXPbmXppvDyjtjLWtAcA==
+
 "@strapi/plugin-graphql@^4.6.0":
   version "4.6.0"
   resolved "https://registry.npmmirror.com/@strapi/plugin-graphql/-/plugin-graphql-4.6.0.tgz#8df14514f79172b95dd26c2049ec10aa6f7732b3"

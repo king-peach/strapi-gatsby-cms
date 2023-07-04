@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "tags"
+    "displayName": "tags",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,20 +16,24 @@
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "article": {
+    "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "tags"
+    },
+    "desciption": {
+      "type": "text"
     }
   }
 }

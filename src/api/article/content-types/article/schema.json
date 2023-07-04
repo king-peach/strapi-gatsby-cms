@@ -22,20 +22,13 @@
     "orderTime": {
       "type": "datetime"
     },
-    "content": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
     "tags": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::tag.tag",
-      "mappedBy": "article"
+      "mappedBy": "articles"
     },
-    "descrition": {
+    "description": {
       "type": "text"
     },
     "keywords": {
@@ -43,6 +36,10 @@
     },
     "slug": {
       "type": "text"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
